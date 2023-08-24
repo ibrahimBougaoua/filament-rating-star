@@ -2,9 +2,9 @@
 
 namespace IbrahimBougaoua\FilamentRatingStar;
 
+use IbrahimBougaoua\FilamentRatingStar\Commands\FilamentRatingStarCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use IbrahimBougaoua\FilamentRatingStar\Commands\FilamentRatingStarCommand;
 
 class FilamentRatingStarServiceProvider extends PackageServiceProvider
 {
