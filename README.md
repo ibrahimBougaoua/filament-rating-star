@@ -6,12 +6,12 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/ibrahimbougaoua/filament-rating-star.svg?style=flat-square)](https://packagist.org/packages/ibrahimbougaoua/filament-rating-star)
 
 Star rating field & Star column.
-
-<a href="https://www.youtube.com/watch?v=ON3VEyvb96M" target="_blank">Youtube Video</a>
 <br />
-[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/rating.png" width="100%">](https://www.youtube.com/watch?v=ON3VEyvb96M)
+[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/rating.png">](https://www.youtube.com/watch?v=ON3VEyvb96M)
+<br />
+<a href="https://www.youtube.com/watch?v=ON3VEyvb96M" target="_blank">Youtube Video</a>
 <br /><br />
-[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/ibrahim-bougaoua-star-rating.png" width="100%">](https://www.youtube.com/watch?v=ON3VEyvb96M)
+[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/ibrahim-bougaoua-star-rating.jpg" width="100%">](https://www.youtube.com/watch?v=ON3VEyvb96M)
 
 ## Installation
 
@@ -64,9 +64,9 @@ return $form
         Section::make()
             ->schema([
                 RatingStar::make('rating')
-					->label('Rating')
-				])
-			])
+                ->label('Rating')
+            ])
+        ])
 ```
 
 With Table :
