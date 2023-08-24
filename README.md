@@ -1,19 +1,17 @@
-# This is my package filament-rating-star
+# Filament Star rating field & column.
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ibrahimbougaoua/filament-rating-star.svg?style=flat-square)](https://packagist.org/packages/ibrahimbougaoua/filament-rating-star)
 [![GitHub Tests Action Status](https://img.shields.io/github/actions/workflow/status/ibrahimbougaoua/filament-rating-star/run-tests.yml?branch=main&label=tests&style=flat-square)](https://github.com/ibrahimbougaoua/filament-rating-star/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![GitHub Code Style Action Status](https://img.shields.io/github/actions/workflow/status/ibrahimbougaoua/filament-rating-star/fix-php-code-style-issues.yml?branch=main&label=code%20style&style=flat-square)](https://github.com/ibrahimbougaoua/filament-rating-star/actions?query=workflow%3A"Fix+PHP+code+style+issues"+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/ibrahimbougaoua/filament-rating-star.svg?style=flat-square)](https://packagist.org/packages/ibrahimbougaoua/filament-rating-star)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
+Star rating field & Star column.
 
-## Support us
-
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/filament-rating-star.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/filament-rating-star)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
+<a href="https://www.youtube.com/watch?v=ON3VEyvb96M" target="_blank">Youtube Video</a>
+<br />
+[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/rating.png" width="100%">](https://www.youtube.com/watch?v=ON3VEyvb96M)
+<br /><br />
+[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/ibrahim-bougaoua-star-rating.png" width="100%">](https://www.youtube.com/watch?v=ON3VEyvb96M)
 
 ## Installation
 
@@ -40,6 +38,13 @@ This is the contents of the published config file:
 
 ```php
 return [
+    'stars' => [
+        'star1' => '1',
+        'star2' => '2',
+        'star3' => '3',
+        'star4' => '4',
+        'star5' => '5',
+    ]
 ];
 ```
 
@@ -51,9 +56,26 @@ php artisan vendor:publish --tag="filament-rating-star-views"
 
 ## Usage
 
+With Form :
+
 ```php
-$filamentRatingStar = new IbrahimBougaoua\FilamentRatingStar();
-echo $filamentRatingStar->echoPhrase('Hello, IbrahimBougaoua!');
+return $form
+    ->schema([
+        Section::make()
+            ->schema([
+                RatingStar::make('rating')
+					->label('Rating')
+				])
+			])
+```
+
+With Table :
+
+```php
+return $table
+    ->columns([
+        RatingStarColumn::make('rating')
+    ])
 ```
 
 ## Testing
@@ -61,10 +83,6 @@ echo $filamentRatingStar->echoPhrase('Hello, IbrahimBougaoua!');
 ```bash
 composer test
 ```
-
-## Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed recently.
 
 ## Contributing
 
