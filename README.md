@@ -10,7 +10,7 @@ Star rating field & Star column.
 <br />
 <a href="https://www.youtube.com/watch?v=ON3VEyvb96M" target="_blank">Youtube Video</a>
 <br /><br />
-[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/ibrahim-bougaoua-star-rating.jpg" width="100%">](https://www.youtube.com/watch?v=ON3VEyvb96M)
+[<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/ibrahim-bougaoua-star-rating.jpg" width="100%" class="filament-hidden">](https://www.youtube.com/watch?v=ON3VEyvb96M)
 
 ## Installation
 
