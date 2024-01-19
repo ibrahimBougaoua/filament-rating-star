@@ -11,10 +11,11 @@
       @foreach ($options as $key => $value)
             @php
                 $shouldOptionBeDisabled = $isDisabled || $isOptionDisabled($key, $value);
+                $uniqueId = $id . '-' . $key; // Unique ID for each input element
             @endphp
             <input
                 @disabled($shouldOptionBeDisabled)
-                id="{{ $key }}"
+                id="{{ $uniqueId }}"
                 name="{{ $id }}"
                 type="radio"
                 value="{{ $value }}"
@@ -22,7 +23,7 @@
                 {{ $applyStateBindingModifiers('wire:model') }}="{{ $statePath }}"
                 class="star-{{ $value }}"
             />
-            <label class="star-{{ $value }}" for="{{ $key }}"></label>
+            <label class="star-{{ $value }}" for="{{ $uniqueId }}"></label>
         @endforeach
         <span></span>
     </div>
