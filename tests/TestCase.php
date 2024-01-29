@@ -2,9 +2,9 @@
 
 namespace IbrahimBougaoua\FilamentRatingStar\Tests;
 
+use IbrahimBougaoua\FilamentRatingStar\FilamentRatingStarServiceProvider;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use IbrahimBougaoua\FilamentRatingStar\FilamentRatingStarServiceProvider;
 
 class TestCase extends Orchestra
 {
