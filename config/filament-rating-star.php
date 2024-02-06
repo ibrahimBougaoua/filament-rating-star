@@ -9,4 +9,5 @@ return [
         'star4' => '4',
         'star5' => '5',
     ],
+    'isRTL' => false,
 ];
