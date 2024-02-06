@@ -2,9 +2,9 @@
 
 namespace IbrahimBougaoua\FilamentRatingStar\Columns;
 
-use Filament\Tables\Columns\Column;
 use Filament\Forms\Components\Concerns\HasToggleColors;
 use Filament\Forms\Components\Concerns\HasToggleIcons;
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\Concerns\CanBeValidated;
 use Filament\Tables\Columns\Concerns\CanUpdateState;
 use Filament\Tables\Columns\Contracts\Editable;
