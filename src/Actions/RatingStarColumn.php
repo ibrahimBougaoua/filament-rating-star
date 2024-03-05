@@ -16,7 +16,7 @@ class RatingStarColumn extends Column implements Editable
     use HasToggleColors;
     use HasToggleIcons;
 
-    protected string $view = 'filament-rating-star::actions.rating-star-column';
+    protected string $view = 'filament-rating-star::columns.rating-star-column';
 
     protected function setUp(): void
     {
