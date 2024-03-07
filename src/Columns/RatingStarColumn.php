@@ -18,6 +18,8 @@ class RatingStarColumn extends Column implements Editable
 
     protected string $view = 'filament-rating-star::columns.rating-star-column';
 
+    protected string $size = 'lg';
+
     protected function setUp(): void
     {
         parent::setUp();
@@ -25,5 +27,17 @@ class RatingStarColumn extends Column implements Editable
         $this->disabledClick();
 
         $this->rules(['boolean']);
+    }
+
+    public function size(string $size): static
+    {
+        $this->size = $size;
+
+        return $this;
+    }
+
+    public function getSize(): string
+    {
+        return $this->size;
     }
 }

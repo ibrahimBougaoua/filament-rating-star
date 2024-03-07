@@ -71,11 +71,27 @@ return $form
 With Table :
 
 ```php
+use IbrahimBougaoua\FilamentRatingStar\Columns\RatingStarColumn;
+
 return $table
     ->columns([
         RatingStarColumn::make('rating')
     ])
 ```
+
+You can use the `size` method to customize the size of the stars:
+
+```php
+use IbrahimBougaoua\FilamentRatingStar\Columns\RatingStarColumn;
+
+return $table
+    ->columns([
+        RatingStarColumn::make('rating')
+            ->size('sm')
+    ])
+```
+
+Supported sizes are `xs`, `sm`, `md`, `lg` and `xl`.
 
 ## Testing
 
