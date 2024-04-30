@@ -116,7 +116,7 @@
   width: 40% !important;
 }
 
-.ratings .stars label.star-2:hover~span {
+.ratings .stars label.star-1:hover~span {
   width: 20% !important;
 }
 
