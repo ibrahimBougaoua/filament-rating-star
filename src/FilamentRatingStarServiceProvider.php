@@ -4,7 +4,6 @@ namespace IbrahimBougaoua\FilamentRatingStar;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Facades\FilamentAsset;
-use IbrahimBougaoua\FilamentRatingStar\Commands\FilamentRatingStarCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -20,8 +19,7 @@ class FilamentRatingStarServiceProvider extends PackageServiceProvider
         $package
             ->name('filament-rating-star')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasCommand(FilamentRatingStarCommand::class);
+            ->hasViews();
     }
 
     public function packageBooted(): void

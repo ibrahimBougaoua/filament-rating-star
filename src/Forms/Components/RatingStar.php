@@ -1,6 +1,6 @@
 <?php
 
-namespace IbrahimBougaoua\FilamentRatingStar\Actions;
+namespace IbrahimBougaoua\FilamentRatingStar\Forms\Components;
 
 use Filament\Forms\Components\Radio;
 
