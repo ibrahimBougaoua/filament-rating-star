@@ -20,13 +20,6 @@ You can install the package via composer:
 composer require ibrahimbougaoua/filament-rating-star
 ```
 
-You can publish and run the migrations with:
-
-```bash
-php artisan vendor:publish --tag="filament-rating-star-migrations"
-php artisan migrate
-```
-
 You can publish the config file with:
 
 ```bash
@@ -58,6 +51,8 @@ php artisan vendor:publish --tag="filament-rating-star-views"
 With Form :
 
 ```php
+use IbrahimBougaoua\FilamentRatingStar\Forms\Components\RatingStar;
+
 return $form
     ->schema([
         Section::make()
@@ -71,22 +66,22 @@ return $form
 With Table :
 
 ```php
-use IbrahimBougaoua\FilamentRatingStar\Columns\RatingStarColumn;
+use IbrahimBougaoua\FilamentRatingStar\Columns\Components\RatingStar;
 
 return $table
     ->columns([
-        RatingStarColumn::make('rating')
+        RatingStar::make('rating')
     ])
 ```
 
 You can use the `size` method to customize the size of the stars:
 
 ```php
-use IbrahimBougaoua\FilamentRatingStar\Columns\RatingStarColumn;
+use IbrahimBougaoua\FilamentRatingStar\Columns\Components\RatingStar;
 
 return $table
     ->columns([
-        RatingStarColumn::make('rating')
+        RatingStar::make('rating')
             ->size('sm')
     ])
 ```
@@ -99,9 +94,6 @@ Supported sizes are `xs`, `sm`, `md`, `lg` and `xl`.
 composer test
 ```
 
-## Contributing
-
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security Vulnerabilities
 
@@ -110,6 +102,7 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## Credits
 
 - [Ibrahim](https://github.com/ibrahimBougaoua)
+- [Red Squirrel Studio](https://github.com/redsquirrelstudio)
 - [All Contributors](../../contributors)
 
 ## License

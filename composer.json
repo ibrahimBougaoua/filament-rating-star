@@ -36,14 +36,12 @@
     },
     "autoload": {
         "psr-4": {
-            "IbrahimBougaoua\\FilamentRatingStar\\": "src/",
-            "IbrahimBougaoua\\FilamentRatingStar\\Database\\Factories\\": "database/factories/"
+            "IbrahimBougaoua\\FilamentRatingStar\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "IbrahimBougaoua\\FilamentRatingStar\\Tests\\": "tests/",
-            "Workbench\\App\\": "workbench/app/"
+            "IbrahimBougaoua\\FilamentRatingStar\\Tests\\": "tests/"
         }
     },
     "scripts": {
