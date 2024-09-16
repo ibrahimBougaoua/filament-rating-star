@@ -9,25 +9,14 @@ use Filament\Tables\Columns\Concerns\CanBeValidated;
 use Filament\Tables\Columns\Concerns\CanUpdateState;
 use Filament\Tables\Columns\Contracts\Editable;
 
-class RatingStar extends Entry implements Editable
+class RatingStar extends Entry
 {
-    use CanBeValidated;
-    use CanUpdateState;
     use HasToggleColors;
     use HasToggleIcons;
 
     protected string $view = 'filament-rating-star::columns.components.rating-star';
 
     protected string $size = 'lg';
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        $this->disabledClick();
-
-        $this->rules(['boolean']);
-    }
 
     public function size(string $size): static
     {
