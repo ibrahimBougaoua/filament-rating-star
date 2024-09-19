@@ -74,6 +74,17 @@ return $table
     ])
 ```
 
+With Infolist :
+
+```php
+use IbrahimBougaoua\FilamentRatingStar\Entries\Components\RatingStar;
+
+return $infolist
+    ->schema([
+        RatingStar::make('rating')
+    ])
+```
+
 You can use the `size` method to customize the size of the stars:
 
 ```php
