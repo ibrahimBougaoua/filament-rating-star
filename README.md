@@ -8,6 +8,11 @@ Star rating field & Star column.
 <br />
 [<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/rating.png">](https://www.youtube.com/watch?v=ON3VEyvb96M)
 <br />
+
+## Support us
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/ibrahimbougaoua)
+
 <a href="https://www.youtube.com/watch?v=ON3VEyvb96M" target="_blank">Youtube Video</a>
 <br /><br />
 [<img src="https://raw.githubusercontent.com/ibrahimBougaoua/screenshot/main/images/ibrahim-bougaoua-star-rating.jpg" width="100%" class="filament-hidden">](https://www.youtube.com/watch?v=ON3VEyvb96M)
