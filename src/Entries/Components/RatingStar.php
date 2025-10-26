@@ -15,6 +15,8 @@ class RatingStar extends Entry
 
     protected string $size = 'lg';
 
+    protected bool $inline = false;
+
     public function size(string $size): static
     {
         $this->size = $size;
@@ -22,8 +24,20 @@ class RatingStar extends Entry
         return $this;
     }
 
+    public function inline(): static
+    {
+        $this->inline = true;
+
+        return $this;
+    }
+
     public function getSize(): string
     {
         return $this->size;
+    }
+
+    public function getInline(): bool
+    {
+        return $this->inline;
     }
 }
