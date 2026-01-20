@@ -11,7 +11,7 @@
       @foreach ($options as $key => $value)
             @php
                 $shouldOptionBeDisabled = $isDisabled || $isOptionDisabled($key, $value);
-                $uniqueId = $id . '-' . $key; // Unique ID for each input element
+                $uniqueId = "$id-$key"; // Unique ID for each input element
             @endphp
             <input
                 @disabled($shouldOptionBeDisabled)
