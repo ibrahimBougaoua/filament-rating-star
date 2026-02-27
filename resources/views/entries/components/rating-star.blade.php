@@ -12,7 +12,7 @@
         };
     @endphp
 
-    <div class="flex p-10" dir="{{ $direction }}">
+    <div class="flex" dir="{{ $direction }}">
         @for ($i = 1; $i <= count(config('filament-rating-star.stars')); $i++)
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="{{ $size }}" height="{{ $size }}">
                 <path
